@@ -1,0 +1,15 @@
+@model Employee
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1 class="h3">Edit Employee</h1>
+<form asp-action="Edit">
+    <partial name="_EmployeeForm" model="Model" />
+    <button type="submit" class="btn btn-success">Update</button>
+    <a asp-action="Index" class="btn btn-secondary">Back</a>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

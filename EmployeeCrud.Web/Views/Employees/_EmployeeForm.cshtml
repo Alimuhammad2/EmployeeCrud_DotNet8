@@ -1,0 +1,35 @@
+@model Employee
+
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+<input type="hidden" asp-for="Id" />
+
+<div class="mb-3">
+    <label asp-for="EmployeeName" class="form-label"></label>
+    <input asp-for="EmployeeName" class="form-control" />
+    <span asp-validation-for="EmployeeName" class="text-danger"></span>
+</div>
+<div class="mb-3">
+    <label asp-for="EmployeeDepartment" class="form-label"></label>
+    <input asp-for="EmployeeDepartment" class="form-control" />
+    <span asp-validation-for="EmployeeDepartment" class="text-danger"></span>
+</div>
+<div class="mb-3">
+    <label asp-for="EmployeeAge" class="form-label"></label>
+    <input asp-for="EmployeeAge" class="form-control" />
+    <span asp-validation-for="EmployeeAge" class="text-danger"></span>
+</div>
+<div class="mb-3">
+    <label asp-for="EmployeeEmail" class="form-label"></label>
+    <input asp-for="EmployeeEmail" class="form-control" />
+    <span asp-validation-for="EmployeeEmail" class="text-danger"></span>
+</div>
+<div class="mb-3">
+    <label asp-for="CheckInTime" class="form-label"></label>
+    <input asp-for="CheckInTime" class="form-control" type="datetime-local" />
+    <span asp-validation-for="CheckInTime" class="text-danger"></span>
+</div>
+<div class="mb-3">
+    <label asp-for="CheckOutTime" class="form-label"></label>
+    <input asp-for="CheckOutTime" class="form-control" type="datetime-local" />
+    <span asp-validation-for="CheckOutTime" class="text-danger"></span>
+</div>
